@@ -48,8 +48,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
-    let sum = a + b + c;
-    let multi = a * b *c;
+   // let sum = a + b + c;
+    let sum = mySum(a, b);
+    let sum1 = mySum(sum, c)
+     sum =sum1;
+    // let multi = a * b *c;
+    let multi = myMultiply(a, b);
+    let multi1 = myMultiply(multi, c)
+     multi = multi1;
     let massageOne = `${a} and ${b} and ${c} sum to ${sum}.`
     let massageTow = `The product of ${a} and ${b} and ${c} is ${multi}.`
     return [sum, multi, massageOne, massageTow]
