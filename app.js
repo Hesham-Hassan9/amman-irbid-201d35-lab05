@@ -102,11 +102,12 @@ Test this function by hand in the console to get it working, and when you think 
 function multiplyArray(multArr) {
     let multi = 1;
     for(let i = 0; i < multArr.length; i++){
-        multi = multi * multArr[i];
+        multi = myMultiply(multi, multArr[i])
+        multi = multi;
     }
     
     let massage = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multi}.`
-    return[multi, massage]
+    return[multi, massage]]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
