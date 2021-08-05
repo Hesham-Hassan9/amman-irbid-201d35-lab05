@@ -74,9 +74,10 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4];
 
 function sumArray(sumArr) {
-    let sum =0;
+    let sum = 0 ;
     for(let i=0; i<sumArr.length; i++){
-     sum = sum + sumArr[i];
+     sum = mySum(sum,sumArr[i]);
+     sum =sum;
     }
     let massage = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum.`
     return [sum, massage]
